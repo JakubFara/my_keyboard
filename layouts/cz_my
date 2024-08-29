@@ -1,59 +1,64 @@
-default  partial alphanumeric_keys modifier_keys
+default  partial alphanumeric_keys
 xkb_symbols "basic" {
 
     name[Group1]= "English (US)";
+    key <TLDE> {[ grave,	        asciitilde,	    NoSymbol,       NoSymbol   ]};
+    key <AE01> {[ 1,	            exclam, 		Nosymbol,       Nosymbol   ]};
+    key <AE02> {[ 2,	            at,		        NoSymbol,       NoSymbol   ]};
+    key <AE03> {[ 3,	            numbersign,	    NoSymbol,       NoSymbol   ]};
+    key <AE04> {[ 4,	            dollar,		    NoSymbol,       NoSymbol   ]};
+    key <AE05> {[ 5,	            percent,		NoSymbol,       NoSymbol   ]};
+    key <AE06> {[ 6,	            asciicircum,	NoSymbol,       NoSymbol   ]};
+    key <AE07> {[ 7,	            ampersand,	    NoSymbol,       NoSymbol   ]};
+    key <AE08> {[ 8,	            asterisk,	    NoSymbol,       NoSymbol   ]};
+    key <AE09> {[ 9,	            parenleft,	    NoSymbol,       NoSymbol   ]};
+    key <AE10> {[ 0,	            parenright,	    NoSymbol,       NoSymbol   ]};
+    key <AE11> {[ minus,	        underscore,	    NoSymbol,       NoSymbol   ]};
+    key <AE12> {[ equal,	        plus,		    NoSymbol,       NoSymbol   ]};
 
-    key <TLDE> {[ grave,	asciitilde	]	};
-    key <AE01> {[ 1,	exclam 		]	};
-    key <AE02> {[ 2,	at		]	};
-    key <AE03> {[ 3,	numbersign	]	};
-    key <AE04> {[ 4,	dollar		]	};
-    key <AE05> {[ 5,	percent		]	};
-    key <AE06> {[ 6,	asciicircum	]	};
-    key <AE07> {[ 7,	ampersand	]	};
-    key <AE08> {[ 8,	asterisk	]	};
-    key <AE09> {[ 9,	parenleft	]	};
-    key <AE10> {[ 0,	parenright	]	};
-    key <AE11> {[ minus,	underscore	]	};
-    key <AE12> {[ equal,	plus		]	};
+    key <AD01> {[ q,                Q,              exclam, 		NoSymbol    ]};
+    key <AD02> {[ w,                W,              at,		        Nosymbol    ]};
+    key <AD03> {[ e,                E,              numbersign,     NoSymbol    ]};
+    key <AD04> {[ r,                R,              dollar,	        NoSymbol    ]};
+    key <AD05> {[ t,                T,              percent,	    NoSymbol    ]};
+    key <AD06> {[ y,                Y,              asciicircum,	NoSymbol    ]};
+    key <AD07> {[ u,                U,              ampersand,	    NoSymbol    ]};
+    key <AD08> {[ i,                I,              asterisk,	    NoSymbol    ]};
+    key <AD09> {[ o,                O,              parenleft,	    NoSymbol    ]};
+    key <AD10> {[ p,                P,              parenright,	    NoSymbol    ]};
+    key <AD11> {[ bracketleft,	    braceleft,	    NoSymbol,       NoSymbol    ]};
+    key <AD12> {[ bracketright,	    braceright,	    NoSymbol,       NoSymbol    ]};
+    key <AC01> {[ a,                A,   	        1,              NoSymbol    ]};
+    key <AC02> {[ s,                S,              2,              NoSymbol    ]};
+    key <AC03> {[ d,                D,              3,              NoSymbol    ]};
+    key <AC04> {[ f,                F,  	        4,              NoSymbol    ]};
+    key <AC05> {[ g,                G, 	            5,              NoSymbol    ]};
+    key <AC06> {[ h,                H,              6,              NoSymbol    ]};
+    key <AC07> {[ j,                J,   	        7,              NoSymbol    ]};
+    key <AC08> {[ k,                K,              8,              NoSymbol    ]};
+    key <AC09> {[ l,                L,              9,              NoSymbol    ]};
 
-    key <AD01> {[ XF86MonBrightnessDown,	Q 		]	};
-    key <AD02> {[ XF86MonBrightnessUp,	W		]	};
-    key <AD03> {[ XF86ZoomIn,	E		]	};
-    key <AD04> {[ XF86ZoomOut,	R		]	};
-    key <AD05> {[ t,	T		]	};
-    key <AD06> {[ y,	Y		]	};
-    key <AD07> {[ KP_Prior,	U		]	};
-    key <AD08> {[ KP_Home,	I		]	};
-    key <AD09> {[ o,	O		]	};
-    key <AD10> {[ p,	P		]	};
-    key <AD11> {[ bracketleft,	braceleft	]	};
-    key <AD12> {[ bracketright,	braceright	]	};
+    key <AC10> {[ semicolon,		colon,          0,              NoSymbol	]};
+    key <AC11> {[ apostrophe,		quotedbl,       BackSpace,       NoSymbol    ]};
+    key <AC12> {[ EuroSign,		    dead_diaeresis,	NoSymbol,       NoSymbol    ]};
+    key <BKSL> {[ dead_diaeresis,   apostrophe,		backslash,      bar         ]};
 
-    key <AC01> {[ XF86AudioLowerVolume,          A,   asciitilde,     NoSymbol ] };
-    key <AC02> {[ XF86AudioRaiseVolume,	S		]	};
-    key <AC03> {[ XF86AudioMute,	D		]	};
-    key <AC04> {[ XF86AudioPlay,	F		]	};
-    key <AC05> {[ XF86RotationKB,	G		]	};
-    key <AC06> {[ KP_Left,	H		]	};
-    key <AC07> {[ KP_Down,	J		]	};
-    key <AC08> {[ KP_Up,  	K		]	};
-    key <AC09> {[ KP_Right,	L		]	};
-    key <AC10> {[ semicolon,	colon		]	};
-    key <AC11> {[ apostrophe,	quotedbl	]	};
+    key <LSGT> {[ backslash,        bar,        	slash,     	    NoSymbol    ]};
+    key <AB01> {[ z,                Z,       	    degree,     	NoSymbol    ]};
+    key <AB02> {[ x,                X,   		    numbersign,     Nosymbol    ]};
+    key <AB03> {[ c,                C,    		    Escape,     	NoSymbol    ]};
+    key <AB04> {[ v,                V,              at,     	    NoSymbol    ]};
+    key <AB05> {[ b,                B,    		    BackSpace,     	NoSymbol    ]};
+    key <AB06> {[ n,                N,   		    plus,     	    NoSymbol    ]};
+    key <AB07> {[ m,                M,  		    minus,     	    NoSymbol    ]};
+    key <AB08> {[ comma,	        less,		    underscore,	    NoSymbol    ]};
+    key <AB09> {[ period,	        greater,        equal,          NoSymbol    ]};
+    key <AB10> {[ slash,	        question,       backslash	                ]};
 
-    key <AB01> {[	  z,	Z 		]	};
-    key <AB02> {[	  x,	X		]	};
-    key <AB03> {[	  XF86ApplicationLeft,	C		]	};
-    key <AB04> {[	  v,	V		]	};
-    key <AB05> {[	  b,	B		]	};
-    key <AB06> {[	  KP_Next,	N		]	};
-    key <AB07> {[	  KP_End,	M		]	};
-    key <AB08> {[     comma,	less		]	};
-    key <AB09> {[   period,	greater		]	};
-    key <AB10> {[     slash,	question	]	};
+    key <SPCE> {[ space,            space,          space,          space       ]};
+    key <CAPS> {[ ISO_Level3_Shift, ISO_Level3_Shift, ISO_Level3_Shift, ISO_Level3_Shift ]};
 
-    key <BKSL> {[ backslash,         bar	]	};
+    include "level3(ralt_switch)"
 };
 
 partial alphanumeric_keys
@@ -120,12 +125,13 @@ xkb_symbols "intl" {
     key <AC04> { [	   f,          F,             f,                F ] };
     key <AC05> { [	   g,          G,             g,                G ] };
     key <AC06> { [	   h,          H,             h,                H ] };
-    key <AC07> { [	   KP_Down,          J,             j,                J ] };
-    key <AC08> { [	   KP_Up,          K,            oe,               OE ] };
+    key <AC07> { [	   j,          J,             j,                J ] };
+    key <AC08> { [	   k,          K,            oe,               OE ] };
 
-    key <AC09> { [	    l,              L,              oslash,         Ooblique ] };
-    key <AC10> { [      semicolon,      colon,          paragraph,           degree ] };
-    key <AC11> { [      dead_acute,     dead_diaeresis, apostrophe,        quotedbl ] };
+    key <AC09> { [	   l,          L,        oslash,         Ooblique ] };
+    key <AC10> { [ semicolon,
+  colon,     paragraph,           degree ] };
+    key <AC11> { [dead_acute, dead_diaeresis, apostrophe,        quotedbl ] };
 
     key <AB01> { [	   z,          Z,            ae,               AE ] };
     key <AB02> { [	   x,          X,             x,                X ] };
@@ -617,6 +623,7 @@ xkb_symbols "dvp" {
 
 // phonetic layout for Russian letters on an US keyboard
 // by Ivan Popov <pin@konvalo.org> 2005-07-17
+
 // level3 modifier is a shortcut to the "us" meaning of the keys where
 // we place cyrillic letters, handy for accessing the corresponding
 // punctuation marks.
@@ -1894,6 +1901,7 @@ xkb_symbols "drix" {
 	key <AE11> {[ minus,       underscore,     quotedbl,             plusminus             ]}; // - _ " ±
 	key <AE12> {[ plus,        equal,          apostrophe,           notequal              ]}; // + = ' ≠
 
+	// Second row
 	key <AD01> {[ q,           Q,              oslash,               Ooblique              ]}; // q Q ø Ø
 	key <AD02> {[ w,           W,              w,                    uparrow               ]}; // w W w ↑
 	key <AD03> {[ e,           E,              EuroSign,             EuroS                 ]}; // e E € €

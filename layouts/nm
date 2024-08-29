@@ -39,23 +39,24 @@ xkb_symbols "basic" {
     key <AC09> {[ l,                L,              9,              NoSymbol    ]};
 
     key <AC10> {[ semicolon,		colon,          0,              NoSymbol	]};
-    key <AC11> {[ apostrophe,		quotedbl,	    NoSymbol,       NoSymbol    ]};
+    key <AC11> {[ apostrophe,		quotedbl,       BackSpace,       NoSymbol    ]};
     key <AC12> {[ EuroSign,		    dead_diaeresis,	NoSymbol,       NoSymbol    ]};
     key <BKSL> {[ dead_diaeresis,   apostrophe,		backslash,      bar         ]};
 
     key <LSGT> {[ backslash,        bar,        	slash,     	    NoSymbol    ]};
     key <AB01> {[ z,                Z,       	    degree,     	NoSymbol    ]};
-    key <AB02> {[ x,                X,   		    numbersign,     Nosymbol    ]};
-    key <AB03> {[ c,                C,    		    ampersand,     	NoSymbol    ]};
-    key <AB04> {[ v,                V,              at,     	    NoSymbol    ]};
-    key <AB05> {[ b,                B,    		    BackSpace,     	NoSymbol    ]};
-    key <AB06> {[ n,                N,   		    plus,     	    NoSymbol    ]};
-    key <AB07> {[ m,                M,  		    minus,     	    NoSymbol    ]};
-    key <AB08> {[ comma,	        less,		    underscore,	    NoSymbol    ]};
-    key <AB09> {[ period,	        greater,        equal,          NoSymbol    ]};
-    key <AB10> {[ slash,	        question,       backslash	                ]};
+    key <AB02> {[ x,                X,   	    numbersign,		Nosymbol    ]};
+    key <AB03> {[ c,                C,              Escape,     	NoSymbol    ]};
+    key <AB04> {[ v,                V,              at,     	    	NoSymbol    ]};
+    key <AB05> {[ b,                B,    	    BackSpace,  	NoSymbol    ]};
+    key <AB06> {[ n,                N,   	    plus,     		NoSymbol    ]};
+    key <AB07> {[ m,                M,  	    minus,     		NoSymbol    ]};
+    key <AB08> {[ comma,	    less,	    underscore,		NoSymbol    ]};
+    key <AB09> {[ period,	    greater,        equal,          	NoSymbol    ]};
+    key <AB10> {[ slash,	    question,       backslash	                ]};
 
     key <SPCE> {[ space,            space,          space,          space       ]};
+    key <CAPS> {[ ISO_Level3_Shift, ISO_Level3_Shift, ISO_Level3_Shift, ISO_Level3_Shift ]};
 
     include "level3(ralt_switch)"
 };
@@ -128,7 +129,8 @@ xkb_symbols "intl" {
     key <AC08> { [	   k,          K,            oe,               OE ] };
 
     key <AC09> { [	   l,          L,        oslash,         Ooblique ] };
-    key <AC10> { [ semicolon,      colon,     paragraph,           degree ] };
+    key <AC10> { [ semicolon,
+  colon,     paragraph,           degree ] };
     key <AC11> { [dead_acute, dead_diaeresis, apostrophe,        quotedbl ] };
 
     key <AB01> { [	   z,          Z,            ae,               AE ] };

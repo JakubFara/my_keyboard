@@ -7,7 +7,7 @@ if [[ "$layout" == "layout:     nm" ]]
 then
     # gsettings set org.gnome.desktop.interface cursor-size 38
     # gsettings set org.gnome.desktop.interface cursor-theme Yaru
-    setxkbmap -layout mv
+    setxkbmap -layout cz
 else
     # gsettings set org.gnome.desktop.interface cursor-size 48
     # gsettings set org.gnome.desktop.interface cursor-theme Volantes_cursors
